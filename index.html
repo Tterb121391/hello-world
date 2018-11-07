@@ -5,6 +5,36 @@
     <title>My Website Title</title>
   </head>
   <body>
-    Hello, World!
+    <button onclick="helloConsole();">Hello, Console</button>
+  </br>
+  </br>
+    <script type="text/javascript">
+    function helloConsole() {
+      console.log("Hello, World!");
+    }
+    </script>
+    <button onclick="helloPopup();">Hello, Pop-up</button>
+  </br>
+  </br>
+    <script type="text/javascript">
+    function helloPopup() {
+      alert("Hello, World!");
+    }
+    </script>
+    <button onclick="helloBrowser();">Hello, Browser</button>
+    <p id="buttonThree"></p>
+    <script type="text/javascript">
+    function helloBrowser() {
+      var p = document.getElementById("buttonThree");
+      p.innerHTML = "Hello, World!";
+    }
+    </script>
+    <button onclick="helloStranger();">Hello, Stranger</button>
+    <script type="text/javascript">
+    function helloStranger() {
+      var name = prompt("What is your first name?", "Bob");
+      alert("Hello, " + name + "!");
+    }
+    </script>
   </body>
 </html>
